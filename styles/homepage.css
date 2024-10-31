@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --primary-color: #485752;
+    --secondary-color: #809990;
+    --accent1-color: #181B1A;
+    --accent2-color: #FFFFFF;
+
+    --heading-font: 'Roboto Serif', sans-serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+    --nav-background-color: #D7DBD9;
+    --nav-link-color: #181B1A;
+    --nav-hover-link-color: #AD8598;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.heading {
+    display: flex;
+}
+
+.heading img {
+    padding: 15px;
+    max-width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+h1 {
+    display: flex;
+    font-family: var(--heading-font);
+    font-weight: lighter;
+    color: var(--accent2-color);
+    font-size: 2rem;
+    padding: .75rem 0 0 .75rem;
+}
+
+#menu {
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0 1.5rem 0 0;
+    color: var(--accent2-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu:hover {
+    color: var(--nav-2-hover-link-color);
+}
+
+.navigation {
+    padding-top: 2.5rem;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent2-color);
+    text-align: right;
+    padding: .5rem;
+    font-family: var(--paragraph-font);
+    font-weight: 600;
+    margin-right: 10px;
+    /* transition: 0.25s; */
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+/* .show {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    transition: 0.25s;
+} */
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    font-family: var(--paragraph-font);
+    font-size: 2rem;
+    padding: 0.6rem 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navigation.show+h1 {
+    display: none;
+}
+
+.container {
+    display: block;
+    margin: 1rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 1rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: var(--accent2-color);
+}
+
+.course-work {
+    border-radius: 3px;
+    padding-bottom: 20px;
+}
+
+.list li {
+    padding-bottom: 5px;
+}
+
+.city {
+    border-radius: 3px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+figure img {
+    max-width: 300px;
+}
+
+figcaption {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: .75rem;
+    padding: .25rem;
+}
+
+.certificate {
+    border-radius: 3px;
+    text-align: center;
+}
+
+button {
+    margin: 10px 5px 10px 5px;
+    padding: .25rem 3rem .25rem 3rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #0000; /*change color*/
+}
+
+.class-type {
+    border-bottom: 1px solid #000; /* change color */
+}
+
+#course-list {
+    display: block;
+    margin: 15px;
+    font-family: var(--paragraph-font);
+}
+
+.course-item {
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+#course-list .completed {
+    background-color: var(--nav-hover-link-color);
+    color: var(--accent2-color);
+    font-style: italic;
+    border-radius: 3px;
+    padding: .5rem 2.5rem .5rem 2.5rem;;
+}
+
+#course-list .not-completed {
+    background-color: gray;
+    color: black;
+    border-radius: 3px;
+    padding: .5rem 2.5rem .5rem 2.5rem;;
+}
+
+#credits {
+    font-family: var(--paragraph-font);
+}
+
+footer {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: .5rem;
+    margin: 0;
+}
+
+footer p {
+    margin: 10px;
+}
