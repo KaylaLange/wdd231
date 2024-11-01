@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
-    --primary-color: #485752;
-    --secondary-color: #809990;
-    --accent1-color: #181B1A;
-    --accent2-color: #FFFFFF;
+    --primary-color: #C8CBC5;
+    --secondary-color: #E9E0D4;
+    --accent1-color: #D1BFA7;
+    --accent2-color: #1A1C1A;
+    
 
     --heading-font: 'Roboto Serif', sans-serif;
     --paragraph-font: 'Inter', sans-serif;
 
-    --nav-background-color: #D7DBD9;
-    --nav-link-color: #181B1A;
-    --nav-hover-link-color: #AD8598;
+    --nav-background-color: #2E302E;
+    --nav-link-color: white;
+    --nav-hover-link-color: #E9E0D4;
+    --nav-2-hover-link-color: white;
 }
-
 body {
     width: 100%;
     margin: auto;
@@ -29,16 +30,18 @@ header {
 }
 
 .heading img {
-    padding: 15px;
+    margin: 15px;
     max-width: 80px;
     height: 80px;
     object-fit: contain;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px #888888;
 }
 
 h1 {
     display: flex;
     font-family: var(--heading-font);
-    font-weight: lighter;
+    font-weight: 500;
     color: var(--accent2-color);
     font-size: 2rem;
     padding: .75rem 0 0 .75rem;
@@ -78,21 +81,12 @@ h1 {
     text-align: right;
     padding: .5rem;
     font-family: var(--paragraph-font);
-    font-weight: 600;
     margin-right: 10px;
-    /* transition: 0.25s; */
 }
 
 .navigation a:hover {
-    color: var(--nav-hover-link-color);
+    color: var(--nav-2-hover-link-color);
 }
-
-/* .show {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    transition: 0.25s;
-} */
 
 .show li {
     display: block;
@@ -121,6 +115,7 @@ h2 {
     font-family: var(--heading-font);
     text-align: center;
     background-color: var(--secondary-color);
+    font-weight: lighter;
     margin: 0;
     padding: 1rem;
     border-top-left-radius: 3px;
@@ -130,7 +125,6 @@ h2 {
 
 .course-work {
     border-radius: 3px;
-    padding-bottom: 20px;
 }
 
 .list li {
@@ -157,37 +151,36 @@ figcaption {
 .certificate {
     border-radius: 3px;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 button {
     margin: 10px 5px 10px 5px;
-    padding: .25rem 3rem .25rem 3rem;
+    padding: .5rem 3rem .5rem 3rem;
     border: none;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--nav-background-color);
+    color: var(--nav-2-hover-link-color);
     font-family: var(--paragraph-font);
     border-radius: 3px;
-    box-shadow: 0px 0px 5px #0000; /*change color*/
+    box-shadow: 0px 0px 5px #888888;
 }
 
 .class-type {
-    border-bottom: 1px solid #000; /* change color */
+    border-bottom: 1px solid #000;
 }
 
 #course-list {
     display: block;
-    margin: 15px;
+    margin: 15px 15px 30px 15px;
     font-family: var(--paragraph-font);
 }
 
 .course-item {
     margin-bottom: 20px;
-    padding: 10px;
-
 }
 
 #course-list .completed {
-    background-color: var(--nav-hover-link-color);
+    background-color: var(--primary-color);
     color: var(--accent2-color);
     font-style: italic;
     border-radius: 3px;
@@ -195,14 +188,18 @@ button {
 }
 
 #course-list .not-completed {
-    background-color: gray;
-    color: black;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
     border-radius: 3px;
     padding: .5rem 2.5rem .5rem 2.5rem;;
 }
 
 #credits {
     font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+    border: 2px solid var(--primary-color);
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 3px;
 }
 
 footer {
