@@ -12,3 +12,9 @@ window.addEventListener('resize', () => {
     if (window.matchMedia('(min-width: 740px)').matches) {
     }
 });
+
+document.querySelectorAll('.navigation a').forEach(link => {
+    if (link.href === window.location.href){
+        link.classList.add('active');
+    }
+});
