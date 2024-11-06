@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #f4f7f2;
+    --secondary-color: #C8CBC5;
+    --accent1-color: #455B55;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+    --nav-background-color: #2E302E;
+    --nav-hover-link-color: #C8CBC5;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+button {
+    width: 85%;
+    font-size: 1rem;
+    background-color: var(--nav-background-color);
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px gray;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 0 5px 0;
+}
+
+nav button.active {
+    /* border: 3px solid white; */
+    border: 1px solid var(--nav-background-color);
+    color: var(--nav-background-color);
+    background-color: rgba(46, 48, 46, 0.10);
+}
+
+nav button:hover {
+    background-color: var(--nav-hover-link-color);
+    color: var(--nav-background-color);
+    box-shadow: 0 0 5px black;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 5px;
+    background-color: var(--nav-background-color);
+    /* background-color: var(--accent1-color); */
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 0 8px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 3px;
+    padding: 2%;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    margin: 0;
+    padding: 1rem 0 .75rem 0;
+}
+
+.card p {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 2px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (min-width: 740px) {
+    button {
+        width: 125px;
+        padding: .35rem;
+        margin: 1rem;
+    }
+}
