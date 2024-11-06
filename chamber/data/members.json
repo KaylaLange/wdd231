@@ -1,0 +1,68 @@
+{
+    "members" : [
+        {
+            "business_name" : "Estes Park Trolleys",
+            "address" : "1360 Big Thompson Ave, Estes Park, CO",
+            "phone_number" : "(970) 481-8531",
+            "website" : "https://estesparktrolleys.com",
+            "membership" : "silver",
+            "contact_person" : "Nick Cassatt, President"
+        },
+        {
+            "business_name" : "The Taffy Shop",
+            "address" : "121 West Elkhorn Ave, Estes Park, CO",
+            "phone_number" : "(970) 586-4548",
+            "website" : "http://www.originaltaffyshop.com/",
+            "membership" : "gold",
+            "contact_person" : "Mark Igel"
+        },
+        {
+            "business_name" : "Rocky Mountain Chocolate Factory",
+            "address" : "517 Big Thompson Ave, Estes Park, CO",
+            "phone_number" : "(970) 586-6601",
+            "website" : "https://www.rmcf.com",
+            "membership" : "member",
+            "contact_person" : "Jo Adams, Owner"
+        },
+        {
+            "business_name" : "Historic Park Theatre",
+            "address" : "130 Moraine Ave, Estes Park, CO",
+            "phone_number" : "(970) 586-8904",
+            "website" : "https://www.historicparktheatre.com",
+            "membership" : "silver",
+            "contact_person" : "Jenna McGregor, General Manager"
+        },
+        {
+            "business_name" : "Estes Valley Library",
+            "address" : "335 E Elkhorn Ave, Estes Park, CO",
+            "phone_number" : "(970) 481-8116",
+            "website" : "https://estesvalleylibrary.org",
+            "membership" : "membership",
+            "contact_person" : "Kirby Hazelton, Communications Specialist"
+        },
+        {
+            "business_name" : "Estes Tram LLC",
+            "address" : "420 E Riverside Dr, Estes Park, CO",
+            "phone_number" : "(970) 281-5083",
+            "website" : "https://estestram.com",
+            "membership" : "gold",
+            "contact_person" : "Stephanie Miller, Operations Manager"
+        },
+        {
+            "business_name" : "Bird and Jim",
+            "address" : "915 Moraine Ave, Estes Park, CO",
+            "phone_number" : "(970) 586-9832",
+            "website" : "https://www.birdandjim.com",
+            "membership" : "membership",
+            "contact_person" : "Duncan Feldman, Owner"
+        },
+        {
+            "business_name" : "YMCA of the Rockies",
+            "address" : "2515 Tunnel Road, Estes Park, CO",
+            "phone_number" : "(970) 481-3344",
+            "website" : "https://www.ymcarockies.org",
+            "membership" : "silver",
+            "contact_person" : "Jessica Anderson, Marketing Coordinator"
+        }
+    ]
+}
