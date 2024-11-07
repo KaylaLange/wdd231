@@ -6,6 +6,9 @@
     <title>WDD 231 - Chamber Directory Page</title><meta name="description" content="Kayla Lange WDD 231 Chamber Directory Page">
     <meta name="author" content="Kayla Lange">
 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="">
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/directory.js" defer></script>
 
@@ -36,7 +39,11 @@
         </nav>
     </header>
     <main>
-        <div id="members"></div>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <article id="members" class="grid"></article>
     </main>
     <footer>
         <h4>Estes Park Chamber of Commerce</h4>
