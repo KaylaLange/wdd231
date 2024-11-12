@@ -50,7 +50,7 @@ nav button:hover {
 #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 5px;
+    gap: 15px;
     background-color: var(--nav-background-color);
     /* background-color: var(--accent1-color); */
     padding: 1rem;
