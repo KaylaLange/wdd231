@@ -1,0 +1,59 @@
+:root{
+    --primary-color: #C8CBC5;
+    --secondary-color: #E9E0D4;
+    --accent1-color: #D1BFA7;
+    --accent2-color: #1A1C1A;
+    
+
+    --heading-font: 'Roboto Serif', sans-serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+    --nav-background-color: #E9E0D4;
+
+}
+@media (min-width: 740px) {
+
+    #hambutton {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 35px;
+        grid-template-rows: 1fr;
+        background-color: var(--primary-color);
+    }
+
+    ul.navigation, ul.navigation.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #members.list .member-item {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        align-items: center;
+    }
+
+    .member-address {
+        margin-left: 10px;
+    }
+    
+    .member-phone {
+        justify-self: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .sociallinks {
+        align-items: center;
+    }
+
+}
+

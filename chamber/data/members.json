@@ -2,67 +2,83 @@
     "members" : [
         {
             "business_name" : "Estes Park Trolleys",
+            "business_image" : "images/estes-park-trolleys.jpg",
+            "image-width" : "auto",
+            "image-height" : "75",
             "address" : "1360 Big Thompson Ave, Estes Park, CO",
             "phone_number" : "(970) 481-8531",
             "website" : "https://estesparktrolleys.com",
-            "membership" : "silver",
-            "contact_person" : "Nick Cassatt, President"
+            "membership" : "silver"
         },
         {
             "business_name" : "The Taffy Shop",
+            "business_image" : "images/estes-park-taffy-shop.jpg",
+            "image-width" : "auto",
+            "image-height" : "75",
             "address" : "121 West Elkhorn Ave, Estes Park, CO",
             "phone_number" : "(970) 586-4548",
             "website" : "http://www.originaltaffyshop.com/",
-            "membership" : "gold",
-            "contact_person" : "Mark Igel"
+            "membership" : "gold"
         },
         {
             "business_name" : "Rocky Mountain Chocolate Factory",
+            "business_image" : "images/rocky-mountain-chocolate-factory.jpg",
+            "image-width" : "auto",
+            "image-height" : "75",
             "address" : "517 Big Thompson Ave, Estes Park, CO",
             "phone_number" : "(970) 586-6601",
             "website" : "https://www.rmcf.com",
-            "membership" : "member",
-            "contact_person" : "Jo Adams, Owner"
+            "membership" : "member"
         },
         {
             "business_name" : "Historic Park Theatre",
+            "business_image" : "images/historic-park-theatre.png",
+            "image-width" : "auto",
+            "image-height" : "75",
             "address" : "130 Moraine Ave, Estes Park, CO",
             "phone_number" : "(970) 586-8904",
             "website" : "https://www.historicparktheatre.com",
-            "membership" : "silver",
-            "contact_person" : "Jenna McGregor, General Manager"
+            "membership" : "silver"
         },
         {
             "business_name" : "Estes Valley Library",
+            "business_image" : "images/estes-valley-library.webp",
+            "image-width" : "auto",
+            "image-height" : "75",
             "address" : "335 E Elkhorn Ave, Estes Park, CO",
             "phone_number" : "(970) 481-8116",
             "website" : "https://estesvalleylibrary.org",
-            "membership" : "membership",
-            "contact_person" : "Kirby Hazelton, Communications Specialist"
+            "membership" : "membership"
         },
         {
             "business_name" : "Estes Tram LLC",
+            "business_image" : "images/estes-tram.png",
+            "image-width" : "auto",
+            "image-height" : "75",
             "address" : "420 E Riverside Dr, Estes Park, CO",
             "phone_number" : "(970) 281-5083",
             "website" : "https://estestram.com",
-            "membership" : "gold",
-            "contact_person" : "Stephanie Miller, Operations Manager"
+            "membership" : "gold"
         },
         {
             "business_name" : "Bird and Jim",
+            "business_image" : "images/bird-and-jim.png",
+            "image-width" : "auto",
+            "image-height" : "75",
             "address" : "915 Moraine Ave, Estes Park, CO",
             "phone_number" : "(970) 586-9832",
             "website" : "https://www.birdandjim.com",
-            "membership" : "membership",
-            "contact_person" : "Duncan Feldman, Owner"
+            "membership" : "membership"
         },
         {
             "business_name" : "YMCA of the Rockies",
+            "business_image" : "images/ymca-of-the-rockies.png",
+            "image-width" : "auto",
+            "image-height" : "75",
             "address" : "2515 Tunnel Road, Estes Park, CO",
             "phone_number" : "(970) 481-3344",
             "website" : "https://www.ymcarockies.org",
-            "membership" : "silver",
-            "contact_person" : "Jessica Anderson, Marketing Coordinator"
+            "membership" : "silver"
         }
     ]
 }

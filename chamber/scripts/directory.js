@@ -15,26 +15,36 @@ document.addEventListener("DOMContentLoaded", () => {
     function displayMembers(members) {
         const membersContainer = document.getElementById('members');
         members.forEach(member => {
-            const memberDiv = document.createElement('div');
-            memberDiv.classList.add('member');
-            memberDiv.innerHTML = `
-            <h2>${member.business_name}</h2>
-            <p>${member.address}</p>
-            <p>${member.phone_number}</p>
-            <p><a href="${member.website}" target="_blank">${member.website}</a></p>`;
+            const memberItemDiv = document.createElement('div');
+            memberItemDiv.classList.add('member-item');
 
-            membersContainer.appendChild(memberDiv);
+            memberItemDiv.innerHTML = `
+            <img src="${member.business_image}" alt="${member.business_name}" class="business-image" width="${member['image-width']}" height=${member['image-height']}">
+            <div class="member-name">${member.business_name}</div>
+            <div class="member-address">${member.address}</div>
+            <div class="member-phone">${member.phone_number}</div>
+            <div class="member-website"><a href="${member.website}" target"_blank">${member.website}</a></div>`;
+    
+            membersContainer.appendChild(memberItemDiv);
         });
     }
 
     // grid and list button 
     const gridButton = document.querySelector('#grid');
     const listButton = document.querySelector('#list');
-    const display = document.querySelector('members');
+    const display = document.querySelector('#members');
 
     const toggleView = (view) => {
         display.classList.remove('grid', 'list');
         display.classList.add(view);
+
+        if (view === 'grid') {
+            gridButton.classList.add('active');
+            listButton.classList.remove('active');
+        } else {
+            listButton.classList.add('active');
+            gridButton.classList.remove('active');
+        }
     };
 
     toggleView('grid');
@@ -43,3 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
     listButton.addEventListener('click', () => toggleView('list'));
 
 });
+
+ // hamburger button 
+ const hamburgerElement = document.querySelector('#hambutton');
+ const navElement = document.querySelector('#animateme');
+
+ hamburgerElement.addEventListener('click', () => {
+     navElement.classList.toggle('open');
+     hamburgerElement.classList.toggle('open'); 
+ });
