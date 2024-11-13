@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             memberItemDiv.classList.add('member-item');
 
             memberItemDiv.innerHTML = `
-            <img src="${member.business_image}" alt="${member.business_name}" class="business-image" width="${member['image-width']}" height=${member['image-height']}">
+            <img src="${member.business_image}" alt="${member.business_name}" class="business-image" height=${member['image-height']}" loading="lazy">
             <div class="member-name">${member.business_name}</div>
             <div class="member-address">${member.address}</div>
             <div class="member-phone">${member.phone_number}</div>

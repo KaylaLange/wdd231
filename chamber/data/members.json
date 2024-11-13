@@ -2,7 +2,7 @@
     "members" : [
         {
             "business_name" : "Estes Park Trolleys",
-            "business_image" : "images/estes-park-trolleys.jpg",
+            "business_image" : "images/estes-park-trolleys.webp",
             "image-width" : "auto",
             "image-height" : "75",
             "address" : "1360 Big Thompson Ave, Estes Park, CO",
@@ -12,7 +12,7 @@
         },
         {
             "business_name" : "The Taffy Shop",
-            "business_image" : "images/estes-park-taffy-shop.jpg",
+            "business_image" : "images/estes-park-taffy-shop.webp",
             "image-width" : "auto",
             "image-height" : "75",
             "address" : "121 West Elkhorn Ave, Estes Park, CO",
@@ -22,7 +22,7 @@
         },
         {
             "business_name" : "Rocky Mountain Chocolate Factory",
-            "business_image" : "images/rocky-mountain-chocolate-factory.jpg",
+            "business_image" : "images/rocky-mountain-chocolate-factory.avif",
             "image-width" : "auto",
             "image-height" : "75",
             "address" : "517 Big Thompson Ave, Estes Park, CO",
