@@ -209,6 +209,12 @@ footer {
 footer h2 {
     font-family: var(--heading-font);
     font-size: medium;
+    padding-left: 10px;
+}
+
+footer p {
+    font-family: var(--paragraph-font);
+    padding-left: 10px;
 }
 
 .sociallinks {
@@ -223,7 +229,7 @@ footer h2 {
     height: 50px;
 }
 
-div.webpage-info {
+/* div.webpage-info {
     padding: 20px;
     box-sizing: border-box;
-}
+} */

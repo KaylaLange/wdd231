@@ -38,6 +38,10 @@
         justify-content: space-evenly;
     }
 
+    footer h2, footer p {
+        padding: 0;
+    }
+
     .sociallinks {
         align-items: center;
     }
