@@ -201,6 +201,19 @@ button {
     border-radius: 3px;
 }
 
+.weather {
+    border-radius: 3px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: var(--paragraph-font);
+    margin-top: 1rem;
+}
+
+#location {
+    font-size: larger;
+    font-weight: 600;
+}
+
 footer {
     font-family: var(--paragraph-font);
     text-align: center;
