@@ -8,17 +8,17 @@
             "address" : "1360 Big Thompson Ave, Estes Park, CO",
             "phone_number" : "(970) 481-8531",
             "website" : "https://estesparktrolleys.com",
-            "membership" : "silver"
+            "membership" : "Silver Member"
         },
         {
             "business_name" : "The Taffy Shop",
             "business_image" : "images/estes-park-taffy-shop.webp",
             "image-width" : "auto",
             "image-height" : "75",
-            "address" : "121 West Elkhorn Ave, Estes Park, CO",
+            "address" : "121 W Elkhorn Ave, Estes Park, CO",
             "phone_number" : "(970) 586-4548",
             "website" : "http://www.originaltaffyshop.com/",
-            "membership" : "gold"
+            "membership" : "Gold Member"
         },
         {
             "business_name" : "Rocky Mountain Chocolate Factory",
@@ -28,7 +28,7 @@
             "address" : "517 Big Thompson Ave, Estes Park, CO",
             "phone_number" : "(970) 586-6601",
             "website" : "https://www.rmcf.com",
-            "membership" : "member"
+            "membership" : "Member"
         },
         {
             "business_name" : "Historic Park Theatre",
@@ -38,7 +38,7 @@
             "address" : "130 Moraine Ave, Estes Park, CO",
             "phone_number" : "(970) 586-8904",
             "website" : "https://www.historicparktheatre.com",
-            "membership" : "silver"
+            "membership" : "Silver Member"
         },
         {
             "business_name" : "Estes Valley Library",
@@ -48,7 +48,7 @@
             "address" : "335 E Elkhorn Ave, Estes Park, CO",
             "phone_number" : "(970) 481-8116",
             "website" : "https://estesvalleylibrary.org",
-            "membership" : "membership"
+            "membership" : "Member"
         },
         {
             "business_name" : "Estes Tram LLC",
@@ -58,7 +58,7 @@
             "address" : "420 E Riverside Dr, Estes Park, CO",
             "phone_number" : "(970) 281-5083",
             "website" : "https://estestram.com",
-            "membership" : "gold"
+            "membership" : "Gold Member"
         },
         {
             "business_name" : "Bird and Jim",
@@ -68,17 +68,17 @@
             "address" : "915 Moraine Ave, Estes Park, CO",
             "phone_number" : "(970) 586-9832",
             "website" : "https://www.birdandjim.com",
-            "membership" : "membership"
+            "membership" : "Member"
         },
         {
             "business_name" : "YMCA of the Rockies",
             "business_image" : "images/ymca-of-the-rockies.png",
             "image-width" : "auto",
             "image-height" : "75",
-            "address" : "2515 Tunnel Road, Estes Park, CO",
+            "address" : "2515 Tunnel Rd, Estes Park, CO",
             "phone_number" : "(970) 481-3344",
             "website" : "https://www.ymcarockies.org",
-            "membership" : "silver"
+            "membership" : "Silver Member"
         }
     ]
 }

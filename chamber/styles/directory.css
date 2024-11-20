@@ -41,8 +41,16 @@ h1 {
 
 nav {
     background-color: var(--nav-background-color);
-    display: grid;
-    grid-template-rows: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#animateme {
+    transition: height 0.5s ease-out;
+}
+
+nav.open {
+    height: 183px;
 }
 
 #hambutton::before {
@@ -76,11 +84,8 @@ ul.navigation {
 
 #hambutton.open::before {
     content: "X";
-    font-family: var(--heading-font);
-}
-
-nav.open {
-    grid-template-rows: 1fr;
+    font-size: smaller;
+    font-family: var(--paragraph-font);
 }
 
 nav ul {
@@ -215,6 +220,7 @@ footer h2 {
 footer p {
     font-family: var(--paragraph-font);
     padding-left: 10px;
+    line-height: .5rem;
 }
 
 .sociallinks {

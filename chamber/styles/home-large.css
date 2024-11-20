@@ -1,0 +1,240 @@
+@media (min-width: 550px) and (max-width:1069px) {
+
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+            "heading heading"
+            "events events"
+            "current forecast"
+            "business business";
+            gap: 15px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    
+        .main-content h2 {
+            grid-area: heading;
+            margin: 20px 0 0;
+
+        }
+    
+        #events {
+            grid-area: events;
+            max-width: 100%;
+            margin: 0;
+
+        }
+    
+        #current-weather {
+            grid-area: current;
+            margin: 0;
+            max-width: 100%;
+        }
+    
+        #weather-forecast {
+            grid-area: forecast;
+            margin: 0;
+            max-width: 100%;
+        }
+    
+        #members {
+            grid-area: business;
+            display: block;
+            gap: 20px;
+            margin: auto 0;
+            margin-top: 30px;
+
+            max-width: 100%;
+            width: 100%;
+        }
+    
+        #members .member-item {
+            box-sizing: border-box;
+            width: 100%;
+        }
+    
+        .business-image {
+            max-width: 50%;
+        }
+}
+
+@media (min-width: 875px) and (max-width: 1069px) {
+
+    #hambutton {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 35px;
+        grid-template-rows: 1fr;
+        background-color: transparent;
+        width: 50%;
+        height: auto;
+    }
+
+    ul.navigation, ul.navigation.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "heading heading"
+        "events events"
+        "current forecast"
+        "business business";
+        gap: 15px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-content h2 {
+        grid-area: heading;
+        margin: 20px 0 0;
+
+    }
+
+    #events {
+        grid-area: events;
+        max-width: 100%;
+        margin: 0;
+
+    }
+
+    #current-weather {
+        grid-area: current;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #weather-forecast {
+        grid-area: forecast;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #members {
+        grid-area: business;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: auto 0;
+        margin-top: 30px;
+
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #members .member-item {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .business-image {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1070px) {
+
+    #hambutton {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 35px;
+        grid-template-rows: 1fr;
+        background-color: transparent;
+        width: 50%;
+        height: auto;
+    }
+
+    ul.navigation, ul.navigation.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "heading heading heading"
+        "events current forecast"
+        "business business business";
+        gap: 15px;
+        max-width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .main-content h2 {
+        grid-area: heading;
+        margin: 20px 0 0;
+    }
+
+    #events {
+        grid-area: events;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #current-weather {
+        grid-area: current;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #weather-forecast {
+        grid-area: forecast;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #members {
+        grid-area: business;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: auto 0;
+        margin-top: 30px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #members .member-item {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .business-image {
+        max-width: 50%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    footer h2, footer p {
+        padding: 0;
+    }
+
+    .sociallinks {
+        align-items: center;
+    }
+
+}
+
