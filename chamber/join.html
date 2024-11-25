@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Chamber Join Page</title><meta name="description" content="Kayla Lange WDD 231 Chamber Join Page">
+    <meta name="author" content="Kayla Lange">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous"> 
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" crossorigin="anonymous"></noscript>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+
+    <script type="module" src="scripts/main-join.js"></script>
+
+    <meta property="og:title" content="WDD 231 Chamber Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kaylalange.github.io/wdd231/images/estes-park-mountain-lakeview-small.webp">
+    <meta property="og:url" content="https://kaylalange.github.io/wdd231/chamber/index.html">
+    <meta name="twitter:card" content="estes_park_mountains_image">
+    <meta name="twitter:title" content="WDD 231 Chamber Join Page">
+    <meta name="twitter:description" content="Welcome to my WDD 231 Chamber Join Page!">
+    <meta name="twitter:image" content="https://kaylalange.github.io/wdd231/images/estes-park-mountain-lakeview-small.webp">
+    <meta name="twitter:url" content="https://kaylalange.github.io/wdd231/">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="images/estes-park-logo.png" alt="Estes Park Logo" height="60">
+        <h1>Estes Park<br><span class="subheader">Chamber of Commerce</span></h1>
+        <button id="hambutton" aria-label="Navigation Button"></button>
+    </header>
+        <nav id="animateme">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    <main>
+        <form method="get" action="thankyou.html" class="join-form">
+            <h1 id="form-title">Become a Member</h1>
+            <label for="first-name">First Name:
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" title="Enter your first name" required>
+            </label><br>
+
+            <label for="last-name">Last Name:
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" title="Enter your last name" required>
+            </label><br>
+
+            <label for="org-title">Job Title:
+                <input type="text" id="org-title" name="organization-title" autocomplete="organization-title" required
+                        pattern="[A-Za-z\s\-]{7,}" title="Please enter a valid organizational title (letters, hyphens, and spaces only, minimum 7 characters)">
+            </label><br>
+
+            <label for="email">Email:
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="abc123@email.com" title="Enter your email address" required>
+            </label><br>
+
+            <label for="phone-number">Phone Number:
+                <input type="tel" id="phone-number" name="phone-number" autocomplete="tel" title="Enter you phone number" required>
+            </label><br>    
+
+            <label for="business-name">Name of Business/Organization:
+                <input type="text" id="business-name" name="business-name" title="Enter the business name" autocomplete="organization" required>
+            </label><br>
+
+            <fieldset>
+                <legend>Membership Level:</legend>
+                <label for="non-profit"><span>Non&#8209;Profit:</span><input type="radio" id="non-profit" name="membership-level" value="non-profit" required></label>
+                <label for="bronze"><span>Bronze:</span><input type="radio" id="bronze" name="membership-level" value="bronze" required></label>
+                <label for="silver"><span>Silver:</span><input type="radio" id="silver" name="membership-level" value="silver" required></label>
+                <label for="gold"><span>Gold:</span><input type="radio" id="gold" name="membership-level" value="gold" required></label>
+            </fieldset>
+
+            <label for="description">Business Description:
+                <textarea id="description" name="business-description" title="Enter a description of your business"></textarea>
+            </label>            
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <button type="submit">Join</button>
+        </form>
+        <div class="explore-memberships-container">
+            <h2 id="explore-memberships">Explore Memberships</h2>
+            <div id="non-profit-container" class="membership-container">
+            </div>
+            <div id="bronze-container" class="membership-container">
+            </div>
+            <div id="silver-container" class="membership-container">
+            </div>
+            <div id="gold-container" class="membership-container">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h2>Estes Park Chamber of Commerce</h2>
+            <p>15 Mountain View Dr</p>
+            <p>Estes Park, CO 80517</p>
+            <p>info@estesparkcc.org</p>
+            <p>(970) 555-1234</p>
+        </div>
+        <div class="sociallinks">
+            <a href="https://youtube.com">
+                <img src="images/youtube-icon.svg" alt="YouTube" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter-x-icon.svg" alt="Twitter" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" width="50" height="50" loading="lazy">
+            </a>
+        </div>
+        <div class="webpage-info">
+        <p>WDD231 Class Project</p>
+        <p>Kayla Lange</p>
+        <p>©<span id="currentyear">2024</span> Estes Park Chamber of Commerce</p>
+        <p><span id="lastModified">Last Modified: 11/12/2024, 08:59 PM</span></p>
+        </div>
+    </footer>
+</body>
+</html>

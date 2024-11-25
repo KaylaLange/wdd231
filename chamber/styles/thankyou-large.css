@@ -1,0 +1,48 @@
+@media (min-width: 740px) {
+
+    #hambutton {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 35px;
+        grid-template-rows: 1fr;
+        background-color: transparent;
+        width: 50%;
+        height: auto;
+    }
+
+    ul.navigation, ul.navigation.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .thank-you {
+        text-align: center;
+        margin: 70px 0 30px 0;
+    }
+
+    #results {
+        max-width: 600px;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: auto;
+    }
+
+    footer h2, footer p {
+        padding: 0;
+    }
+
+    .sociallinks {
+        align-items: center;
+    }
+
+}
+
