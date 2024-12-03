@@ -1,0 +1,135 @@
+:root{
+    --primary-color: #3D4F42;
+    --secondary-color: #F6B389;
+    --accent-color: #F7A637;
+    
+    --heading-font: 'Granville', sans-serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+}
+
+body {
+    background-color: rgba(231, 224, 219, .5);
+}
+
+main {
+    margin-left: 10px;
+}
+
+h1 {
+    font-weight: lighter;
+    margin-bottom: 0;
+    border-bottom: 1px solid #231F20;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+#answer1, #answer2, #answer3 {
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    font-size: smaller;
+}
+
+p, li {
+    font-family: var(--paragraph-font);
+}
+
+p {
+    margin-left: 50px;
+    max-width: 1000px;
+}
+
+.color {
+    width: 500px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#primary {
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+#secondary {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px;
+}
+
+#accent {
+    color: var(--accent-color);
+    font-weight: bolder;
+    font-size: large;
+    background-color: rgba(0, 0, 0, .9);
+    padding: 10px;
+}
+
+#granville {
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+.wireframe-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.wireframe-item h3 {
+    margin-bottom: 5px;
+}
+
+img {
+    width: 90%;
+    height: auto;
+} 
+
+footer {
+    font-family: var(--paragraph-font);
+    background-color: rgba(231, 224, 219, .75);
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 740px) {
+    .wireframes {
+        display: flex;
+        width: 90%;
+    }
+    
+    .wireframe-item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    
+    .wireframe-item h3 {
+        margin-bottom: 5px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    } 
+}
+
+
+
