@@ -334,12 +334,27 @@ footer p {
 }
 
 /* Discover page specifically */
+#attraction img {
+    width: 90%;
+    height: auto;
+}
+
 #discover {
-    margin-bottom: 5px;
+    margin: 0 0 5px 25px;
+    border-top: 1px solid black;
+    width: 90%;
+    padding-top: 15px;
 }
 
 .sidebar {
-    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#localStorage {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 #attraction img {
@@ -362,5 +377,5 @@ footer p {
 figcaption {
     margin: 5px 0 20px 0;
     font-family: var(--paragraph-font);
-    font-size: smaller;
+    font-size: 14px;
 }
