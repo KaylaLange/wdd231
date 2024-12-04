@@ -1,6 +1,5 @@
 @media (min-width: 550px) and (max-width:1069px) {
 
-        
         .main-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -59,6 +58,67 @@
         .business-image {
             max-width: 50%;
         }
+}
+
+@media (min-width: 840px) {
+    /* for Discover Page specifically */
+    /* .discover-page .image-grid, .discover-page .image-grid figure,
+    .discover-page .image-grid h2, .discover-page figure img { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+    }
+     */
+    .discover-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        /* gap: 20px; */
+    }
+
+    #discover {
+        margin-left: 5%;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+    }
+
+    .image-grid h2 {
+        grid-column: span 2;
+        margin: 0 0 20px;
+        padding: 0;
+    }
+
+    .image-grid figure {
+        width: 100%;
+        /* margin: 0 0 0 20px; */
+        /* margin: 0 auto; */
+        /* padding: 0; */
+        /* margin-bottom: 20px; */
+    }
+
+    figure img {
+        max-width: 100%;
+        min-width: 90%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    figcaption {
+        padding: 0;
+        margin: 0;
+    }
+
+    aside {
+        min-width: 400px;
+        max-width: 400px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
 }
 
 @media (min-width: 875px) and (max-width: 1069px) {
@@ -236,5 +296,6 @@
         align-items: center;
     }
 
+  
 }
 
