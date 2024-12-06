@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Vitality Vibes Home Page</title><meta name="description" content="Kayla Lange WDD 231 Vitality Vibes Home Page">
+    <meta name="author" content="Kayla Lange">
+
+    <link rel="preconnect" href="https://use.typekit.net">
+    <link rel="stylesheet" href="https://use.typekit.net/ryn8oqv.css" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+
+    <meta property="og:title" content="WDD 231 Vitality Vibes Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kaylalange.github.io/wdd231/images/balance-heroimage.webp">
+    <meta property="og:url" content="https://kaylalange.github.io/wdd231/final-project-website/index.html">
+    <meta name="twitter:card" content="balance-heroimage">
+    <meta name="twitter:title" content="WDD 231 Vitality Vibes Home Page">
+    <meta name="twitter:description" content="Welcome to my WDD 231 Vitality Vibes Home Page!">
+    <meta name="twitter:image" content="https://kaylalange.github.io/wdd231/images/balance-heroimage.webp">
+    <meta name="twitter:url" content="https://kaylalange.github.io/wdd231/">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="images/vitality-logo.svg" alt="Vitality Vibes Logo" height="90">
+        <h1>Vitality Vibes<br><span class="subheader">Health and Wellness Hub</span></h1>
+        <button id="hambutton" aria-label="Navigation Button"></button>
+    </header>
+        <nav id="animateme">
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="physical.html">Diet & Exercise</a></li>
+                <li><a href="emotional.html">Emotional Wellness</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="images/balance-heroimage-small-480.webp"
+                srcset="images/balance-heroimage-small-480.webp 480w,
+                        images/balance-heroimage-medium-960.webp 960w,
+                        images/balance-heroimage-medium-1440.webp 1920w"
+                sizes="(max-width: 480px) 480px,
+                        (max-width: 960px) 960px,
+                        (max-width: 1600px) 1440px"
+                alt="Rocks Balanced in Nature"
+                style="max-width: 100%; height: auto;">
+            </div>
+         </div>
+        <section class="intro">
+            <h2>Welcome to Vitality Vibes</h2>
+            <p>At Vitality Vibes, we are dedicated to nurturing both your physical and emotional well-being. Our mission is to empower you with the knowledge, tools, and support to live a balanced and fulfilling life. Whether you're seeking tips on physical health, emotional wellness, or just looking for a supportive community, you've come to the right place.</p>
+        </section>
+        <div class="main-content">
+            <section id="diet-exercise-card">
+                <div class="image-container">
+                    <a href="physical.html">
+                        <img src="images/diet-and-exercise.webp" alt="Exercie Weights and Person Holding a Smoothie">
+                        <h3>Diet & Exercise</h3>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p>Healthy Fuel, Active You</p>
+                </div>
+                <!-- <p>Your body needs the right fuel to keep going strong. Our focus on diet and exercise helps you boost energy, improve mood, and support overall well-being. 
+                    Finding the right exercise plan is essential for feeling good and staying active. Whether building strength, increasing flexibility, or maintaining a healthy lifestyle, we have a workout program for you.</p> -->
+            </section>
+            <section id="emotional-card">
+                <div class="image-container">
+                    <a href="emotional.html">
+                        <img src="images/emotional-wellness.webp" alt="Person Meditating on a Beach" loading="lazy">
+                        <h3>Emotional Wellness</h3>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p>Nuture Your Soul</p>
+                </div>
+                    <!-- <p>Emotional wellness is crucial for leading a balanced and fulfilling life. Our focus on emotional wellness helps you manage stress, build resilience, and enhance overall happiness. 
+                    Discover techniques to nurture your mind, such as mindfulness, meditation, and self-care practices. Learn how to develop a positive mindset and maintain emotional balance in everyday life.</p> -->
+            </section>
+        </div>
+        
+        <section id="testimonial-carousel" class="carousel">
+            <h2>Testimonials</h2>
+            <button class="carousel-control-prev">&laquo;</button>
+            <button class="carousel-control-next">&raquo;</button>
+        </section>
+        <section class="newsletter-card">
+            <img class="visually-hidden" src="images/newsletter-card-image.webp" alt="Two Hands Doing Fist Bump" loading="lazy">
+            <form method="get" action="thankyou.html" class="newsletter-form">
+                <h2 id="form-title">Join our Community</h2>
+                <div class="form-container">
+                    <label for="first-name">
+                        <span>First Name:</span>
+                        <input type="text" id="first-name" name="first-name" autocomplete="given-name" title="Enter your first name" required>
+                    </label><br>
+        
+                    <label for="last-name">
+                        <span>Last Name:</span>
+                        <input type="text" id="last-name" name="last-name" autocomplete="family-name" title="Enter your last name" required>
+                    </label><br>
+        
+                    <label for="email">
+                        <span>Email:</span>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="abc123@email.com" title="Enter your email address" required>
+                    </label><br>
+                </div>
+                <fieldset>
+                    <legend>I'm Interested In:</legend>
+                    <label for="diet-and-exercise"><span>Diet & Exercise:</span><input type="radio" id="diet-and-exercise" name="membership-level" value="non-profit" required></label>
+                    <label for="emotional-wellness"><span>Emotional Wellness:</span><input type="radio" id="emotional-wellness" name="membership-level" value="bronze" required></label>
+                    <label for="everything"><span>Everything:</span><input type="radio" id="everything" name="membership-level" value="silver" required></label>
+                </fieldset>          
+    
+                <!-- <input type="hidden" id="timestamp" name="timestamp"> -->
+    
+                <button type="submit">Join</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h2>Vitality Vibes</h2>
+            <p>vitalityvibes@gmail.com</p>
+            <p>(970) 555-1234</p>
+        </div>
+        <div class="sociallinks">
+            <a href="https://youtube.com">
+                <img src="images/youtube-icon-white.svg" alt="YouTube" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter-x-icon-white.svg" alt="Twitter" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin-icon-white.svg" alt="LinkedIn" width="50" height="50" loading="lazy">
+            </a>
+        </div>
+        <div class="webpage-info">
+        <p>WDD231 Class Project</p>
+        <p>Kayla Lange</p>
+        <p>©<span id="currentyear">2024</span> Vitality Vibes</p>
+        <p><span id="lastModified">Last Modified: 11/12/2024, 08:59 PM</span></p>
+        </div>
+    </footer>
+</body>
+</html>

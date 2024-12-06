@@ -1,0 +1,107 @@
+@media (min-width: 840px) {
+
+    #hambutton {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 47px;
+        grid-template-rows: 1fr;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+    }
+
+    ul.navigation li a {
+        color: white;
+    }
+
+    ul.navigation, ul.navigation.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-image img {
+        width: 90%;
+        display: flex;
+        justify-self: center;
+        padding: 30px;
+    }
+
+    .intro {
+        width: 800px;
+        margin: 0 auto;
+        font-size: larger;
+        padding: 25px 0 50px 0;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #diet-exercise-card p, #emotional-card p{
+        width: 300px;
+    }
+
+    #testimonial-carousel {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    #testimonial-carousel h2 {
+        margin-top: 80px;
+    }
+
+    .carousel-control-prev {
+        left: 1px;
+    }
+    
+    .carousel-control-next {
+        right: 1px;
+    }
+
+    .newsletter-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 440px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .newsletter-card img {
+        display: block;
+        margin-right: 20px;
+        min-height: 450px;
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #form-title {
+        margin-top: 0;
+        border-top-left-radius: 0;
+    }
+
+   footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+    footer h2, footer p {
+        padding: 0;
+    }
+
+    .sociallinks {
+        align-items: center;
+    }
+}
