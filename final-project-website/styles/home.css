@@ -9,8 +9,6 @@
     --heading-font: 'Granville', sans-serif;
     --paragraph-font: 'Inter', sans-serif;
 
-    /* --nav-background-color: #E9E0D4; */
-
 }
 
 header, footer {
@@ -123,7 +121,7 @@ p {
     background-color: var(--accent2-color);
     overflow: hidden;
     padding: 0;
-    border-radius: 5px;
+    border-radius: 50px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     max-width: 80%;
@@ -142,8 +140,8 @@ p {
 .image-container img {
     max-width: 100%;
     height: auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     cursor: pointer;
     display: block;
 }
@@ -179,8 +177,6 @@ p {
     padding: 10px 34px 10px;
     margin: 0;
     margin-bottom: 30px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     font-size: larger;
     font-weight: lighter;
 } 
@@ -241,7 +237,13 @@ p {
     padding: 10px;
     cursor: pointer;
     z-index: 2;
-    border-radius: 3px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent3-color);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-control-prev {
@@ -258,15 +260,15 @@ p {
     color: var(--accent3-color);
     padding: 10px;
     margin-bottom: 20px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .newsletter-card {
     margin: 20px;
     background-color: rgba(231, 224, 219, 0.3);
     padding-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     max-width: 75%;
     margin: 0 auto;
@@ -378,4 +380,293 @@ footer p {
 .sociallinks img {
     width: 50px;
     height: 50px;
+}
+
+/* for thank you page */
+.hero-container {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-size: 1.7rem;
+}
+
+.thank-you {
+    color: var(--accent3-color);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+    position: relative;
+}
+
+#results {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--accent3-color);
+    border-radius: 3px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: var(--paragraph-font);
+    margin-top: 20px;
+}
+
+#results a {
+    text-decoration: none;
+    color: var(--accent3-color);
+}
+
+/* for diet and exercise page */
+.intro-image {
+    display: none;
+}
+
+.intro-container h2 {
+    color: var(--accent3-color);
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 2em;
+}
+
+.exercise-heading {
+    padding-top: 20px;
+    border-top: 0.5px solid var(--accent3-color);
+}
+
+.tips {
+    padding: 5px 10px;
+    margin-top: 30px;
+}
+
+.tips ul li {
+    font-family: var(--paragraph-font);
+    padding-bottom: 10px;
+}
+
+.exercise-image-card {
+    position: relative;
+    display: inline-block;
+}
+
+.tips img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.image-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    width: 80%;
+}
+
+.tip-cards {
+    background-color: var(--accent2-color);
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px 30px 10px;
+    padding-bottom: 5px;
+}
+
+.tip-cards ul li {
+    padding: 8px;
+}
+
+.motivation {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.motivation blockquote {
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+}
+
+aside h3, aside h4 {
+    font-family: var(--heading-font);
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 20px;
+}
+
+aside {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+.resources {
+    border-bottom: .5px solid var(--accent3-color);
+}
+
+.resources ul li {
+    padding-bottom: 5px;
+    margin-left: 20px;
+    font-family: var(--paragraph-font);
+}
+
+.resources a {
+    font-family: var(--paragraph-font);
+    color: var(--accent3-color);
+}
+
+.story blockquote {
+    font-family: var(--paragraph-font);
+    font-size: 1em;
+}
+
+cite {
+    margin-left: 40px;
+}
+
+.success-stories {
+    padding-bottom: 20px;
+    border-bottom: .5px solid var(--accent3-color);
+}
+
+.faq p {
+    margin-left: 10px;
+}
+
+/* for emotional wellness page */
+.understanding-card {
+    background-color: var(--accent2-color);
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px 30px 10px;
+    padding-bottom: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.understanding-card img {
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.tip-cards h3, .understanding-card h3 {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+.mindful-exercises {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.emotional-content h2 {
+    margin: 50px 0 20px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal button {
+    font-family: var(--paragraph-font);
+    padding: 10px;
+    width: 175px;
+    background-color: var(--secondary-color);
+    border: 0.25px solid var(--accent3-color);
+    border-radius: 5px;
+}
+
+.modal button:hover {
+    background-color: var(--accent3-color);
+}
+
+#breathing-exercise-card img, #grateful-vibes-card img {
+    border-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#breathing-exercise-card, #grateful-vibes-card {
+    background-color: var(--accent2-color);
+    margin-top: 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+#breathing-exercise-card h3, #grateful-vibes-card h3{
+    font-family: var(--paragraph-font);
+    font-weight:400;
+    text-align: center;
+}
+
+#breathing-exercise-card:hover, #grateful-vibes-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.community a {
+    color: var(--accent3-color);
 }

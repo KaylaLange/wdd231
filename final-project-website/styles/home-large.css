@@ -1,29 +1,4 @@
-@media (min-width: 840px) {
-
-    #hambutton {
-        display: none;
-    }
-
-    nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-top: 47px;
-        grid-template-rows: 1fr;
-        background-color: transparent;
-        width: 100%;
-        height: auto;
-    }
-
-    ul.navigation li a {
-        color: white;
-    }
-
-    ul.navigation, ul.navigation.open {
-        display: flex;
-        justify-content: flex-end;
-    }
-
+@media (min-width: 700px) {
     .hero-image img {
         width: 90%;
         display: flex;
@@ -35,7 +10,7 @@
         width: 800px;
         margin: 0 auto;
         font-size: larger;
-        padding: 25px 0 50px 0;
+        padding: 0px 0 50px 0;
     }
 
     .main-content {
@@ -82,8 +57,8 @@
         max-height: 450px;
         width: 100%;
         object-fit: cover;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -104,4 +79,158 @@
     .sociallinks {
         align-items: center;
     }
+
+    /* for thank you page */
+    .hero-text {
+        font-size: 3rem;
+    }
+
+    /* for diet and exercise and emotional wellness pages */
+    .intro-container h2 {
+        grid-column: span 2;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .intro-container p {
+        min-width: 400px;
+        margin: 0 40px;
+    }
+
+    .intro-image {
+        display: contents;
+    }
+
+    .intro-image img {
+        margin: 0 40px;
+        min-height: 250px;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .tips {
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
+    }
+ 
+    .motivation {
+        border-top: .5px solid var(--accent3-color);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .understanding-card {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    .understanding-card img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    
+}
+
+@media (min-width: 840px) {
+    .page-info {
+        max-width: 1400px;
+    }
+
+    #hambutton {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 47px;
+        grid-template-rows: 1fr;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+    }
+
+    ul.navigation li a {
+        color: white;
+    }
+
+    ul.navigation, ul.navigation.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .physical-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "aside tips"
+        "aside tips"
+        "aside motivation";
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        gap: 0;
+    }
+    
+    .emotional-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "aside intro"
+        "aside heading"
+        "aside understanding"
+        "aside tips";
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    .understanding {
+        grid-area: heading;
+    }
+
+    .understanding-card {
+        grid-area: understanding;
+    }
+
+    aside {
+        grid-area: aside;
+        max-width: 300px;
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 0 15px;
+        background-color: var(--accent2-color);
+    }
+
+    .understanding-card {
+        max-height: 500px;
+    }
+
+    .mindful-exercises {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+   .tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+   }
+
+   .tips h2 {
+    grid-column: span 2;
+    margin-bottom: 0;
+   }
 }

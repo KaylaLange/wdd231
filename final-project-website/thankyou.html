@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 - Vitality Vibes Thank You Page</title><meta name="description" content="Kayla Lange WDD 231 Vitality Vibes Thank You Page">
+    <meta name="author" content="Kayla Lange">
+
+    <link rel="preconnect" href="https://use.typekit.net">
+    <link rel="stylesheet" href="https://use.typekit.net/ryn8oqv.css" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+
+    <script type="module" src="scripts/main-thankyou.js"></script>
+
+    <meta property="og:title" content="WDD 231 Vitality Vibes Thank You Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kaylalange.github.io/wdd231/images/balance-heroimage.webp">
+    <meta property="og:url" content="https://kaylalange.github.io/wdd231/final-project-website/index.html">
+    <meta name="twitter:card" content="balance-heroimage">
+    <meta name="twitter:title" content="WDD 231 Vitality Vibes Thank You Page">
+    <meta name="twitter:description" content="Welcome to my WDD 231 Vitality Vibes Thank You Page!">
+    <meta name="twitter:image" content="https://kaylalange.github.io/wdd231/images/balance-heroimage.webp">
+    <meta name="twitter:url" content="https://kaylalange.github.io/wdd231/">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <img src="images/vitality-logo.svg" alt="Vitality Vibes Logo" height="90">
+        <h1>Vitality Vibes<br><span class="subheader">Health and Wellness Hub</span></h1>
+        <button id="hambutton" aria-label="Navigation Button"></button>
+    </header>
+        <nav id="animateme">
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="physical.html">Diet & Exercise</a></li>
+                <li><a href="emotional.html">Emotional Wellness</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="images/thank-you-hero-small-480.webp"
+                srcset="images/thank-you-hero-small-480.webp 480w,
+                        images/thank-you-hero-medium-960.webp 960w,
+                        images/thank-you-hero-large-1440.webp 1920w"
+                sizes="(max-width: 480px) 480px,
+                        (max-width: 960px) 960px,
+                        (max-width: 1600px) 1440px"
+                alt="Rocks Balanced in Nature"
+                style="max-width: 100%; height: auto;">
+            </div>
+            <h1 class="hero-text">Exciting tips and updates ahead!</h1>
+         </div>
+            <div id="results"></div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h2>Vitality Vibes</h2>
+            <p>vitalityvibes@gmail.com</p>
+            <p>(970) 555-1234</p>
+        </div>
+        <div class="sociallinks">
+            <a href="https://youtube.com">
+                <img src="images/youtube-icon-white.svg" alt="YouTube" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter-x-icon-white.svg" alt="Twitter" width="50" height="50" loading="lazy">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin-icon-white.svg" alt="LinkedIn" width="50" height="50" loading="lazy">
+            </a>
+        </div>
+        <div class="webpage-info">
+        <p>WDD231 Class Project</p>
+        <p>Kayla Lange</p>
+        <p>©<span id="currentyear">2024</span> Vitality Vibes</p>
+        <p><span id="lastModified">Last Modified: 11/12/2024, 08:59 PM</span></p>
+        </div>
+    </footer>
 </body>
 </html>
