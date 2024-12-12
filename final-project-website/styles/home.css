@@ -420,7 +420,7 @@ footer p {
     width: 80%;
     margin: 0 auto;
     color: var(--accent3-color);
-    border-radius: 3px;
+    border-radius: 50px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: var(--paragraph-font);
@@ -670,3 +670,16 @@ cite {
 .community a {
     color: var(--accent3-color);
 }
+
+/* for about us page */
+.hero-container h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+#about-us {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+

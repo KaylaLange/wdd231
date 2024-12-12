@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Vitality Vibes Home Page</title><meta name="description" content="Kayla Lange WDD 231 Vitality Vibes Home Page">
+    <title>WDD 231 - Vitality Vibes About Us Page</title><meta name="description" content="Kayla Lange WDD 231 Vitality Vibes About Us Page">
     <meta name="author" content="Kayla Lange">
 
     <link rel="preconnect" href="https://use.typekit.net">
@@ -14,16 +14,16 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/home-large.css">
 
-    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/main-about.js"></script>
 
-    <meta property="og:title" content="WDD 231 Vitality Vibes Home Page">
+    <meta property="og:title" content="WDD 231 Vitality Vibes About Us Page">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://kaylalange.github.io/wdd231/images/balance-heroimage.webp">
+    <meta property="og:image" content="https://kaylalange.github.io/wdd231/images/about-hero-image.webp">
     <meta property="og:url" content="https://kaylalange.github.io/wdd231/final-project-website/index.html">
-    <meta name="twitter:card" content="balance-heroimage">
-    <meta name="twitter:title" content="WDD 231 Vitality Vibes Home Page">
-    <meta name="twitter:description" content="Welcome to my WDD 231 Vitality Vibes Home Page!">
-    <meta name="twitter:image" content="https://kaylalange.github.io/wdd231/images/balance-heroimage.webp">
+    <meta name="twitter:card" content="about-hero-image">
+    <meta name="twitter:title" content="WDD 231 Vitality Vibes About Us Page">
+    <meta name="twitter:description" content="Welcome to my WDD 231 Vitality Vibes About Us Page!">
+    <meta name="twitter:image" content="https://kaylalange.github.io/wdd231/images/about-hero-image.webp">
     <meta name="twitter:url" content="https://kaylalange.github.io/wdd231/">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -36,60 +36,33 @@
     </header>
         <nav id="animateme">
             <ul class="navigation">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="physical.html">Diet & Exercise</a></li>
                 <li><a href="emotional.html">Emotional Wellness</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li class="active"><a href="about.html">About Us</a></li>
             </ul>
         </nav>
     <main>
         <div class="hero-container">
-            <div class="hero-image">
-                <img src="images/balance-heroimage-small-480.webp"
-                srcset="images/balance-heroimage-small-480.webp 480w,
-                        images/balance-heroimage-medium-960.webp 960w,
-                        images/balance-heroimage-large-1440.webp 1920w"
-                sizes="(max-width: 480px) 480px,
-                        (max-width: 960px) 960px,
-                        (max-width: 1600px) 1440px"
+            <h2>About Us</h2>
+            <div class="hero-image" id="about-hero-image">
+                <img src="images/about-us-hero.webp"
                 alt="Rocks Balanced in Nature"
-                style="max-width: 100%; height: auto;">
+                style="max-width: 90%; height: auto;">
             </div>
          </div>
-        <section class="intro">
-            <h2>Welcome to Vitality Vibes</h2>
-            <p>At Vitality Vibes, we are dedicated to nurturing both your physical and emotional well-being. Our mission is to empower you with the knowledge, tools, and support to live a balanced and fulfilling life. Whether you're seeking tips on physical health, emotional wellness, or just looking for a supportive community, you've come to the right place.</p>
-        </section>
-        <div class="main-content">
-            <section id="diet-exercise-card">
-                <div class="image-container">
-                    <a href="physical.html">
-                        <img src="images/diet-and-exercise.webp" alt="Exercie Weights and Person Holding a Smoothie">
-                        <h3>Diet & Exercise</h3>
-                    </a>
-                </div>
-                <div class="card-content">
-                    <p>Healthy Fuel, Active You</p>
-                </div>
+        <section class="intro" id="about-us">
+            <h2 class="visually-hidden">About Us</h2>
+            <p>Welcome to Vitality Vibes, where our mission is to inspire and nurture a love for life in everyone we touch. 
+                Our journey began with a deep-seated passion for helping others and a strong belief in the transformative power 
+                of emotional and physical wellness. We recognize that true vitality comes from a harmonious balance of mind, body, 
+                and spirit, and we're here to guide you every step of the way. <br><br>Our love for others is at the heart of everything we do. 
+                We are committed to providing you with the tools, knowledge, and support you need to embrace a healthier, more fulfilling life. 
+                Our resources are designed to help you cultivate a deep appreciation for all that your body can achieve and to discover the joy and beauty in every moment.
+                <br><br>At Vitality Vibes, we believe that by fostering a community centered around wellness and positivity, we can empower individuals 
+                to reach their full potential and develop a lifelong love for themselves and the world around them. Join us on this journey and let's 
+                create a vibrant, thriving community together. <br><br>Thank you for being a part of Vitality Vibes. Here's to a life full of vitality and joy!</p>
             </section>
-            <section id="emotional-card">
-                <div class="image-container">
-                    <a href="emotional.html">
-                        <img src="images/emotional-wellness.webp" alt="Person Meditating on a Beach" loading="lazy">
-                        <h3>Emotional Wellness</h3>
-                    </a>
-                </div>
-                <div class="card-content">
-                    <p>Nuture Your Soul</p>
-                </div>
-            </section>
-        </div>
-        
-        <section id="testimonial-carousel" class="carousel">
-            <h2>Testimonials</h2>
-            <button class="carousel-control-prev">&laquo;</button>
-            <button class="carousel-control-next">&raquo;</button>
-        </section>
         <section class="newsletter-card">
             <img class="visually-hidden" src="images/newsletter-card-image.webp" alt="Two Hands Doing Fist Bump" loading="lazy">
             <form method="get" action="thankyou.html" class="newsletter-form">
